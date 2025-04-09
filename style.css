@@ -104,8 +104,6 @@ body{
   .card{
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    max-width: 490px;
+    max-width: 520px;
   }
-
 }
