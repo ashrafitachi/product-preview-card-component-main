@@ -102,8 +102,8 @@ body{
 
 @media (min-width: 900px) {
   .card{
-    display: flex;
-    flex-direction: row;
-    max-width: 520px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
   }
 }
