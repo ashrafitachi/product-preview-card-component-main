@@ -24,26 +24,44 @@
 }
 
 body{
- background-color: var(--Cream);
- 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.card{
- display: inline-block;
+    height: 100vh;
+    background-color: var(--Cream);
 
- width: 100%;
- max-width: 375px;
- min-height: 667px;
-
- background-color: var(--White);
- border-radius: 12px;
- padding: 25px;
+    font-family: 'Montserrat';
 }
 
-.product-image{
+ h1,
+ .price-1{
+    font-family: 'Fraunces';
+ }
+
+ .price-2{
+    text-decoration: line-through;
+ }
+
+.card {
+    background-color: var(--White);
+    border-radius: 12px;
+    overflow: hidden; 
+    max-width: 375px;
+  }
+  
+  .product-image img {
     width: 100%;
-    min-width: 375px;
-}
-
+    display: block; 
+  }
+  
+  .product-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
 .cart{
    background-color: var(--Green-500); 
    color: var(--White);
@@ -56,4 +74,3 @@ body{
    justify-content: center;
    align-items: center;
 }
-
