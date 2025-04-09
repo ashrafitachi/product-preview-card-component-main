@@ -37,22 +37,39 @@ body{
  h1,
  .price-1{
     font-family: 'Fraunces';
+    font-weight: bold;
+ }
+
+ .price-1{
+  color: var(--Green-500);
+  font-size: 32px;
+ 
  }
 
  .price-2{
     text-decoration: line-through;
+    margin-left: 8px;
+    
  }
 
 .card {
     background-color: var(--White);
     border-radius: 12px;
     overflow: hidden; 
-    max-width: 375px;
+    max-width: 373px;
+   
   }
-  
+
+
   .product-image img {
     width: 100%;
-    display: block; 
+    display: inline-block; 
+  }
+
+  .product-category{
+    
+    text-transform:uppercase;
+    letter-spacing: 3px;
   }
   
   .product-content {
@@ -67,10 +84,28 @@ body{
    color: var(--White);
 
    padding: 20px;
-
+   border-radius: 10px;
 
 
    display: flex;
    justify-content: center;
    align-items: center;
+}
+
+.cart a{
+  color: inherit;
+}
+
+.cart-image{
+  margin-right: 8px;
+}
+
+@media (min-width: 900px) {
+  .card{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    max-width: 490px;
+  }
+
 }
